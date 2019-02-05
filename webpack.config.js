@@ -12,6 +12,11 @@ module.exports = {
 	mode: 'development',
 	//webpack 4.x,默认的打包入口路径是src->index.js
 	plugins: [
-	htmlPlugin
-	]
+	htmlPlugin 
+	],
+	module: {
+		rules: [
+			{ test: /\.js|jsx/, use: 'babel-loader', exclude: /node_modules/ }
+		]
+	}
 }
