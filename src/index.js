@@ -7,7 +7,12 @@ import ReactDOM from 'react-dom'
 
 import Comment from '@/components/Comment'
 
+// 导入全局样式表 bootstrap
+import 'bootstrap/dist/css/bootstrap.css'
 
 
 
 ReactDOM.render(  <Comment></Comment>,document.getElementById('app'))
+
+
+
