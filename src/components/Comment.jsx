@@ -1,6 +1,9 @@
 import React from 'react'
 import CmtList from '@/components/CmtList'
 
+import cssobj from '@/css/test.less'
+
+
 export default class Comment extends React.Component {
 	constructor() {
 		super()
@@ -16,7 +19,7 @@ export default class Comment extends React.Component {
 	}
 	render() {
 		return <div>
-		<h1>这是评论列表组件</h1>
+		<h1 className='title'>这是评论列表组件</h1>
 		{this.state.CommentList.map(item => <CmtList{...item} key={item.id}></CmtList>)}
 		</div>
 	}
